@@ -1,6 +1,6 @@
 const express = require("express");
 const app = express();
-const hyper = require("@juspay-tech/orca-node")(
+const hyper = require("@juspay-tech/hyper-node")(
   "snd_46590b6427ed4a1ab5d79a8afca46443"
 );
 

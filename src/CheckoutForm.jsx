@@ -3,7 +3,7 @@ import {
   PaymentElement,
   useStripe,
   useElements,
-} from "@juspay-tech/react-orca-js";
+} from "@juspay-tech/react-hyper-js";
 
 export default function CheckoutForm() {
   const hyper = useStripe();

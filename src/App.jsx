@@ -1,11 +1,11 @@
 import React, { useState, useEffect } from "react";
-import { loadSwitch } from "@juspay-tech/orca-js";
-import { Elements } from "@juspay-tech/react-orca-js";
+import { loadHyper } from "@juspay-tech/hyper-js";
+import { Elements } from "@juspay-tech/react-hyper-js";
 
 import CheckoutForm from "./CheckoutForm";
 import "./App.css";
 
-const hyperPromise = loadSwitch("pk_snd_072150c83b0342d580f46107f74d4cdb");
+const hyperPromise = loadHyper("pk_snd_072150c83b0342d580f46107f74d4cdb");
 
 export default function App() {
   const [clientSecret, setClientSecret] = useState("");
