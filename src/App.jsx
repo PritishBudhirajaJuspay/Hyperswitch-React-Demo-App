@@ -20,9 +20,19 @@ export default function App() {
       .then((data) => setClientSecret(data.clientSecret));
   }, []);
 
-  const appearance = {
-    theme: "stripe",
+  const backgroundColor = (theme) => {
+    if (theme === "brutal") return "#7cff708a";
+    else if (theme === "midnight") return "#1A1F36";
+    else if (theme === "soft") return "#3E3E3E";
+    else return "#ddd8d812";
   };
+
+  const appearance = {
+    theme: "brutal", // * Theme - default, soft, brutal, midnight, none, charcoal
+  };
+
+  document.body.style.background = backgroundColor(appearance.theme);
+
   const options = {
     clientSecret,
     appearance,
