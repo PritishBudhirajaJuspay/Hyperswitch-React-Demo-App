@@ -28,7 +28,7 @@ export default function App() {
   };
 
   const appearance = {
-    theme: "brutal", // * Theme - default, soft, brutal, midnight, none, charcoal
+    theme: "default", // * Theme - default, soft, brutal, midnight, none, charcoal
   };
 
   document.body.style.background = backgroundColor(appearance.theme);
@@ -36,6 +36,7 @@ export default function App() {
   const options = {
     clientSecret,
     appearance,
+    loader:"auto"
   };
 
   return (

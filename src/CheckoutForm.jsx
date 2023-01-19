@@ -1,13 +1,13 @@
 import React, { useEffect, useState } from "react";
 import {
   PaymentElement,
-  useStripe,
-  useElements,
+  useHyper,
+  useWidgets,
 } from "@juspay-tech/react-hyper-js";
 
 export default function CheckoutForm() {
-  const hyper = useStripe();
-  const elements = useElements();
+  const hyper = useHyper();
+  const elements = useWidgets();
 
   const [message, setMessage] = useState(null);
   const [isLoading, setIsLoading] = useState(false);
